@@ -1,7 +1,8 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from database.models import *
+
 from settings.postgres_config import DATABASE_URL
+from db_connection.models import *
 
 engine = create_engine(DATABASE_URL)
 
